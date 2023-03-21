@@ -1,9 +1,28 @@
 <div class="container">
-  <h1 class="mb-4 mt-4">Features and Services</h1>
+  <h1 class="mb-4 mt-4">Digital Twin Experience</h1>
 
   <div class="viewer-container">
-    <div (click)="showServices()">Services</div>
+    <div>
+      <div class="helper-label" (click)="showServices()">Services</div>
+      <div class="helper-label" (click)="showEcoAdvice()">🌍</div>
+      <div class="helper-label" (click)="showManual()">📖</div>
+      <div class="helper-label" (click)="showTroubleShooting()">🔧</div>
+      <div
+        class="helper-label device-maintenance blink"
+        (click)="showDeviceState()"
+      >
+        ⚠️
+      </div>
+    </div>
     <app-object-viewer class="viewer"></app-object-viewer>
+  </div>
+
+  <div *ngIf="selectedInfo == manualCode" class="pdf-viewer">
+    <ng2-pdfjs-viewer
+      pdfSrc="assets/manual.pdf"
+      [page]="selectedPdfPage"
+      zoom="page-fit"
+    ></ng2-pdfjs-viewer>
   </div>
 
   <div *ngIf="selectedInfo == servicesCode">
@@ -79,6 +98,45 @@
           </div>
         </div>
       </div>
+    </div>
+  </div>
+
+  <div class="card mt-3 mb-3" *ngIf="selectedInfo == deviceStateCode">
+    <div class="card-body">
+      <h5 class="card-title">Maintenance Alerts</h5>
+      <p class="card-text">
+        Please perform the right actions to solve the following maintenance
+        alerts before you continue using the device:
+      </p>
+
+      <ul class="list-group">
+        <li class="list-group-item">⚙ Run a self cleaning cycle</li>
+        <li class="list-group-item">
+          ⚙ Run a monthly washing machine recalibration
+        </li>
+        <li class="list-group-item">
+          ⚙ Water pressure is too low, check the water inlet
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="card mt-3 mb-3" *ngIf="selectedInfo == ecoAdviceCode">
+    <div class="card-body">
+      <h5 class="card-title">Eco Tips</h5>
+      <p class="card-text">
+        By following these steps you contribute to a longer life for your
+        washing machine and to a more green environment
+      </p>
+
+      <ul class="list-group">
+        <li class="list-group-item">
+          ✅ Check Hoses and make sure it is adjusted properly to the floor
+        </li>
+        <li class="list-group-item">✅ Don’t Overuse Detergent</li>
+        <li class="list-group-item">✅ Don’t Leave Clothes In It</li>
+        <li class="list-group-item">✅ Do not overload the clothes</li>
+      </ul>
     </div>
   </div>
 
