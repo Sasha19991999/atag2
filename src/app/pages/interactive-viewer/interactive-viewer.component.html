@@ -1,0 +1,404 @@
+<div class="container">
+  <h1 class="mb-4 mt-4">Features and Services</h1>
+
+  <div class="viewer-container">
+    <div (click)="showServices()">Services</div>
+    <app-object-viewer class="viewer"></app-object-viewer>
+  </div>
+
+  <div *ngIf="selectedInfo == servicesCode">
+    <div class="container px-4 py-5" id="custom-cards">
+      <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+        <div class="col">
+          <div
+            class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+            style="background-image: url('assets/detergents.webp')"
+          >
+            <div
+              class="d-flex flex-column h-100 p-5 pt-6 pb-6 text-white distinction-shadow"
+            >
+              <h5 class="pt-2 mt-2 mb-1 aspect-title lh-1 fw-bold">
+                Special environmental friendly detergents that improve the
+                quality of the washing.
+              </h5>
+              <p class="mt-4">
+                <a
+                  class="btn btn-dark"
+                  href="https://us.asko.com/products/laundry/detergents/c/aolaund12"
+                  target="_blank"
+                  >Discover more</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div
+            class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+            style="background-image: url('assets/shelf.webp')"
+          >
+            <div
+              class="d-flex flex-column h-100 p-5 pt-6 pb-6 text-white distinction-shadow"
+            >
+              <h5 class="pt-2 mt-2 mb-4 aspect-title lh-1 fw-bold">
+                Easy to pack and unpack shelf
+              </h5>
+              <p class="mt-4">
+                <a
+                  class="btn btn-dark"
+                  href="https://www.asko.com/uk/laundry/hidden-helper"
+                  target="_blank"
+                  >Discover more</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div
+            class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+            style="background-image: url('assets/ironing-board.webp')"
+          >
+            <div
+              class="d-flex flex-column h-100 p-5 pt-6 pb-6 distinction-shadow"
+            >
+              <h5 class="pt-2 mt-2 mb-4 aspect-title lh-1 fw-bold">
+                Invisible ironing board
+              </h5>
+              <p class="mt-4">
+                <a
+                  class="btn btn-dark"
+                  href="https://us.asko.com/products/laundry/hidden-helpers/IRON-BOARD-HI1153W-ABZ/p/000000000000576552"
+                  target="_blank"
+                  >Discover more</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card mt-3 mb-3" *ngIf="selectedInfo == 8">
+    <div class="card-body">
+      <h5 class="card-title">Protect the environment. Green Mode</h5>
+      <p class="card-text">
+        To achieve the best washing and rinsing results, while reducing water
+        and energy consumption, each stage of the washing program is extended.
+        The total program time is therefore longer compared to normal mode.
+      </p>
+      <h5 class="card-title mt-5">Child lock</h5>
+      <p class="card-text">
+        Keep your children safe: lock the control panel so that the washing
+        machine does not start accidentally.
+      </p>
+      <h5 class="card-title mt-5">Sensi SaveTM</h5>
+      <p class="card-text">
+        The Sensi Save™ feature reduces the carbon footprint by calculating how
+        much water and energy each load needs. The optimized washing program
+        also saves your valuable time. Meaningful, right?
+      </p>
+      <h5 class="card-title mt-5">Allergy mode</h5>
+      <p class="card-text">
+        In this mode, extra water is added to rinse all detergent residues from
+        the laundry and the detergent compartment. More water is used in Allergy
+        mode and energy and time are also added to achieve an optimal wash and
+        rinse result. The selected temperature is kept at the same level for a
+        longer period of time.
+      </p>
+    </div>
+  </div>
+
+  <div class="card mt-3 mb-3" *ngIf="selectedInfo == 6">
+    <div class="card-body">
+      <h5 class="card-title">Door Seal</h5>
+      <p class="card-text">
+        ATAG washing machines do not have a rubber door sleeve/door seal. And
+        there's a good reason for that. The door seal can break down over time
+        and dirt can accumulate in it. By eliminating these, you can now wash
+        more hygienically. Our washing machines are equipped with the
+        SteelSeal™. Dirt and bacteria don't stand a chance.
+        <iframe
+          src="https://www.youtube.com/embed/WqcrzJRnpYY"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+          class="m-auto mt-4 d-block embedded-video"
+        ></iframe>
+      </p>
+    </div>
+  </div>
+
+  <div class="card mt-3 mb-3" *ngIf="selectedInfo == 7">
+    <div class="card-body">
+      <h5 class="card-title">Steam</h5>
+      <p class="card-text">
+        Steam is fresh and convenient. Steam helps freshen up your laundry in no
+        time, without the use of detergent. After 20 minutes of steam treatment
+        with our Steam Refresh program, there is only a short drying time left
+        before you can use your reborn garment. Steam is a very effective and
+        gentle way to treat your shirts, jackets and trousers. You can steam
+        both natural fibres, such as cotton and linen, and synthetic fabrics.
+        The shirt program has an integrated steam function. This function adds
+        steam at the end of the wash cycle to smooth out creases and reduce
+        creases that may appear on fabrics after spinning.
+
+        <iframe
+          src="https://www.youtube.com/embed/4l6STkI2hO8"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+          class="m-auto mt-4 d-block embedded-video"
+        ></iframe>
+      </p>
+    </div>
+  </div>
+
+  <div class="card mt-3 mb-3" *ngIf="selectedInfo == 4">
+    <div class="card-body">
+      <h5 class="card-title">Eco Connection</h5>
+      <p class="card-text">
+        Having access to sustainable and economical hot springs can save energy
+        by connecting your machine directly to the water source. Ideal for
+        district heating, heat pumps and solar panels.
+      </p>
+    </div>
+  </div>
+
+  <div class="card mt-3 mb-3" *ngIf="selectedInfo == 2">
+    <div class="card-body">
+      <h5 class="card-title">Full color display</h5>
+      <p class="card-text">
+        The TFT color display guides you in making the right choices with every
+        wash. The display, as well as the rest of the machine, has low energy
+        consumption.
+      </p>
+    </div>
+  </div>
+
+  <div class="card mt-3 mb-3" *ngIf="selectedInfo == 1">
+    <div class="card-body">
+      <h5 class="card-title">Dose Assist</h5>
+      <p class="card-text">
+        Dose Assist function makes you stop worrying about using the right
+        amount of detergent for your wash. Instead of struggling with dosing the
+        right amount, your ASKO washing machine recommends the required amount
+        of detergent. With the Dose Assist function of our machines, the correct
+        amount of detergent is automatically added based on the load, degree of
+        soiling, water hardness, program type and temperature. This way you
+        always use the right amount, so no more overdosing.
+      </p>
+      <iframe
+        src="https://www.youtube.com/embed/cVj6ZuTxW_E"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+        class="m-auto mt-4 d-block embedded-video"
+      ></iframe>
+    </div>
+  </div>
+
+  <div class="card mt-3 mb-3" *ngIf="selectedInfo == 5">
+    <div class="card-body">
+      <h5 class="card-title">Quattro Construction™</h5>
+      <p class="card-text">
+        The Quattro Construction™ is a unique but simple system consisting of
+        four shock absorbers that transfer the vibration energy from the outer
+        drum to the bottom plate of the machine. In fact, the entire
+        construction is inside the housing and even at maximum spin there are
+        virtually no vibrations. Ideal for a wooden floor.
+      </p>
+      <iframe
+        src="https://www.youtube.com/embed/JoeKQca0Vx8"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+        class="m-auto mt-4 d-block embedded-video"
+      ></iframe>
+
+      <h5 class="mt-5">Pro Wash™</h5>
+      <p class="card-text">
+        The Pro Wash™ system moves the detergent mixed with water towards the
+        top of the drum and lets it land on the laundry from the top. Thus, the
+        laundry is efficiently soaked to guarantee a perfect result, even with a
+        short washing cycle.
+      </p>
+      <iframe
+        src="https://www.youtube.com/embed/p9koZj0fhG8"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+        class="m-auto mt-4 d-block embedded-video"
+      ></iframe>
+    </div>
+  </div>
+
+  <div class="card mt-3 mb-3" *ngIf="selectedInfo == 3">
+    <div class="card-body">
+      <h5 class="card-title">Programs</h5>
+      <ul class="card-text list-group">
+        <li class="list-group-item">
+          <b>Hygiene:</b> The hygiene program is designed for all situations
+          where a thorough hygienic wash is necessary. It is perfect for home
+          cooks looking to clean their aprons, tea towels and other textiles
+          that come into contact with raw food. It is also suitable for washing
+          baby clothes, bedding and clothing used by people with skin allergies.
+          In the latter case, we recommend turning the garments inside out, as
+          this will also thoroughly wash out any skin residue or residues of
+          skin products. The program is characterized by longer heating
+          sequences in combination with additional flushes.
+        </li>
+        <li class="list-group-item">
+          <b>Pro:</b> This is a fast program, but with a high washing
+          efficiency. The program washes with gentle drum movements and lower
+          spin speed and lasts just under an hour.
+        </li>
+        <li class="list-group-item">
+          <b>Super Rinse TM:</b> Dirt is not good for your clothes, but
+          detergents are not good for your skin. As a preventive measure for
+          people with very sensitive skin, ASKO washing machines have an
+          additional flushing function: Super Rinse. This feature is
+          particularly important in soft water countries and involves flushing
+          the machine up to seven times.
+        </li>
+        <li class="list-group-item">
+          <b>Allergy fashion:</b> In this mode, additional water is added to
+          rinse all detergent residues from the laundry and detergent
+          compartment. More water is used in Allergy Mode and energy and time is
+          also added to achieve optimal washing and rinsing result. The selected
+          temperature is kept at the same level for an extended period of time.
+        </li>
+        <li class="list-group-item">
+          <b>Washing Program:</b> With the Anti-wrinkle option, the laundry is
+          washed quietly and centrifuges with fewer creases as a result. Be
+          careful with your clothes and save time ironing
+        </li>
+        <li class="list-group-item">
+          <b>Aqua Safe:</b> Nobody wants water damage at home. Even the smallest
+          leakage that goes unnoticed can cause major problems. That's why we
+          have the Aqua SafeTM system. An advanced water protection with solid
+          constructions such as a PEX hose and a seamlessly welded container.
+          But also smart systems such as a bottom sensor, overflow protection
+          and water leak detection. Steel SealTM - Door Seal Without Rubber Door
+          Cuff Stainless Steel Inner and Outer Drum Overflow Protection Anti
+          BlockTM Bottom Sensor PEX Supply Hose Maximum Water Inflow Duration
+        </li>
+        <li class="list-group-item">
+          <b>Auto Program:</b> The automatic program optimizes washing time and
+          the number of rinses depending on the load and program you choose. Now
+          you can turn a small laundry without feeling guilty.
+        </li>
+        <li class="list-group-item">
+          <b>Bedding Program:</b> A weekly wash for your bedding removes skin
+          debris and mites that cause allergies. This program is intended to
+          wash bedding, pillows and other larger items. Follow the instructions
+          for washing and care. The program adds a large amount of water and
+          additional rinse.
+        </li>
+        <li class="list-group-item">
+          <b>Treat:</b> This is a short program for adding water repellents to
+          substances. The program uses only cold water and a gentle washing
+          mechanism. For use with a water repellent.
+        </li>
+        <li class="list-group-item">
+          <b>Dark Wax:</b> Developed for dark wax, this program prevents
+          detergents from leaving stains on the fabric. Additional rinses are
+          added, and at the same time a gentle washing mechanism and low revs
+          ensure that your dark laundry is gently washed and rinsed thoroughly.
+        </li>
+        <li class="list-group-item">
+          <b>Drum Cleaning:</b> If the drum cleaning program is used regularly,
+          this will extend the freshness of your laundry and the life of your
+          washing machine. One button, two advantages.
+        </li>
+        <li class="list-group-item">
+          <b>Universal Program:</b> The Universal Washing Program takes care of
+          your daily laundry by automatically adjusting the water level and
+          duration to the load. Because every day should be the best day for
+          your laundry.
+        </li>
+        <li class="list-group-item">
+          <b>Green Fashion:</b> In order to achieve the best washing and rinsing
+          result, while reducing water and energy consumption, each stage of the
+          washing program is extended. The total program time is therefore
+          longer compared to normal mode
+        </li>
+        <li class="list-group-item">
+          <b>Intensive Program:</b> The Intensive program ensures that your
+          heavily soiled laundry is clean quickly again. The program time and
+          amount of water are set depending on the amount of laundry. An extra
+          rinse removes the dissolved dirt, clean in no time!
+        </li>
+        <li class="list-group-item">
+          <b>Intensive:</b> In this mode, the washing machine uses more time to
+          wash the load than in normal mode. And to really ensure a perfect
+          result for highly contaminated clothing, more water and energy is also
+          used. In intensive mode, the selected temperature is maintained at the
+          same level for an extended period of time.
+        </li>
+        <li class="list-group-item">
+          <b>Mixed/Synt Syntetic wash program:</b> This program for sensitive
+          mixed fiber clothing and for easy cotton care is faster than the Daily
+          and Cotton washing program. The highest spin speed is 1200 rpm, which
+          you can lower as desired.
+        </li>
+        <li class="list-group-item">
+          <b>Quick Program:</b> Quick program for lightly soiled laundry. The
+          program works at certain temperature, so take into account the
+          directions on the clothes. A lower temperature shortens the duration
+          of the program. You can choose the spin speed yourself.
+        </li>
+        <li class="list-group-item">
+          <b>Flush Program:</b> Use the rinse program to refresh your favorite
+          garment. A thorough rinse and a short centrifuge and your clothes are
+          like new again.
+        </li>
+        <li class="list-group-item">
+          <b>Shirts:</b> Have you also experienced that it is difficult to clean
+          collars and cuffs from shirts? Then try the shirt program. It is a
+          gentle but effective program that uses more water and repeated rinses
+          to clean even the thicker parts of the shirt properly.
+        </li>
+        <li class="list-group-item">
+          <b>Spin-Dry:</b> Choose this program if you just want to spin
+        </li>
+        <li class="list-group-item">
+          <b>Sportswear:</b> A program for clothing with membranes, such as
+          water-repellent clothing and breathable fabrics. This program is also
+          ideal for sportswear made from mixed materials. The program is short
+          and uses fewer rinses to reduce wear on water repellents.
+        </li>
+        <li class="list-group-item">
+          <b>Stains Program:</b> Special stains program. Choose the type of
+          stain and the washing program will ensure the right result.
+        </li>
+        <li class="list-group-item">
+          <b>Cotton:</b> The Cotton program is the best program washing cotton.
+          Tailored for waxes with visible stains for plain or heavily soiled
+          laundry, white or fur. The program will adjust the duration and water
+          consumption according to the load.
+        </li>
+        <li class="list-group-item">
+          <b>Time Program:</b> Using the time program, you can wash as clean as
+          possible in the time you have available. The washing machine ensures
+          an optimal washing result based on your chosen time from 30 minutes to
+          3 hours: that is flexible, smart and time-saving.
+        </li>
+        <li class="list-group-item">
+          <b>Wool/ Hand:</b> wash Program Hand and wool wash programs allow
+          delicate garments to be washed at 40°C before briefly centrifugation
+          at low speed. We promise your favorite wool sweater has never looked
+          so good.
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
