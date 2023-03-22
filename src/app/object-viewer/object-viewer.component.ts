@@ -26,25 +26,13 @@ export class ObjectViewerComponent implements OnInit, AfterViewInit {
   // x-y-z => red, green, blue
   private labels: InfoLabel[] = [
     {
-      x: 0.6, y: 0.7, z: 0.4, code: 1
-    }, // Loading tray dose assist
-    {
-      x: 0.6, y: 0.7, z: -0.5, code: 3
+      x: 0.6, y: 0.7, z: -0.5, code: 3, labelText: "1"
     }, // Programs
     {
-      x: 0.6, y: 0.7, z: 0, code: 2
-    }, // Full color display
-    {
-      x: -0.6, y: 0.7, z: 0.4, code: 4
-    }, // Water connection,
-    {
-      x: 0.6, y: 0, z: 0, code: 5
-    }, // General characteristics center of drum 
-    {
-      x: 0.6, y: 0.45, z: 0, code: 6
+      x: 0.6, y: 0.45, z: 0, code: 6, labelText:"2"
     },
     {
-      x: 0.6, y: 0.1, z: -0.35, code: 7
+      x: 0.6, y: -0.8, z: -0.5, code: 103, labelText: "⚠️", cssClass:"maintenance-label"
     },
     {
       x: -0.6, y: -0.6,  z: 0, code: 8, cssClass: "special-label", labelText: "✨"

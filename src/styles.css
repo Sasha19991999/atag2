@@ -23,6 +23,19 @@
   padding: 0.2em;
 }
 
+.maintenance-label {
+  font-size: 1.1em;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  background: rgba(217, 255, 0, 0.897);
+  display: inline-block;
+  border-radius: 13px;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: bold;
+  padding: 0.2em;
+}
+
 .bd-placeholder-img {
   font-size: 1.125rem;
   text-anchor: middle;
